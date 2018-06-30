@@ -26,6 +26,7 @@ public class PoliceOfficer {
 	
 	
 	
+<<<<<<< HEAD
 	/** 
 	 *  to examine a parkedCar object and a Parking meter object, and determine whether the car's time has expired 
 	 * @param car
@@ -50,6 +51,8 @@ public class PoliceOfficer {
 	}
 	
 	//to issue a parking ticket (generate a parking ticket object) if the car's time has expired
+=======
+>>>>>>> 3829f542ba90a30451c7101da1d54e3dd0bdfa7b
 	
 	
 }
