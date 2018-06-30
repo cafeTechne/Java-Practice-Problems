@@ -48,7 +48,7 @@ public class Application {
 		//tests passed!
 		
 		
-<<<<<<< HEAD
+
 		/*****************************************************************************************/
 		//instantiate a parking ticket object
 		//moved this call to the PoliceOfficer object !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -57,7 +57,7 @@ public class Application {
 		
 		//System.out.println(ticket.getOfficerName());
 		//System.out.println(ticket.getBadgeNumber());
-=======
+
 		//bring it all together by testing a parking ticket
 		//instantiate a parking ticket object
 		
@@ -67,12 +67,12 @@ public class Application {
 
 		System.out.println(ticket.getOfficerName());
 		System.out.println(ticket.getBadgeNumber());
->>>>>>> 3829f542ba90a30451c7101da1d54e3dd0bdfa7b
+
 		//calling objects data fields are correctly set in the ticket object--tests passed!
 		
 		//set remaining data fields of the ticket object
 		//pass a reference to the car object to set data fields in parking ticket
-<<<<<<< HEAD
+
 		//ticket.setAssociatedCar(automobile);
 		
 		//ticket.ticketInfo();
@@ -80,7 +80,7 @@ public class Application {
 		//and make sure that our math works out!
 		
 		//ticket.setFineAmount(automobile, meter);
-=======
+
 		ticket.setAssociatedCar(automobile);
 		
 		ticket.ticketInfo();
@@ -88,29 +88,21 @@ public class Application {
 		//and make sure that our math works out!
 		
 		ticket.setFineAmount(automobile, meter);
->>>>>>> 3829f542ba90a30451c7101da1d54e3dd0bdfa7b
 		//when the amount of time over is 121, we get 45.00 as the fine amount--which is expected
 		//when the amount of time is 120, we get 35.00 which is what is expected!--ALL TESTS PASSED!
 		//::HIGH FIVE::
 		
-<<<<<<< HEAD
+
 		//ticket.ticketInfo();
 
 		/*******************************************************************************************/
 		//moved all of the above logic into the PoliceOfficer class --here we see encapsulation and abstraction at work
 		//TESTS PASSED!! 
 		cop.examineCarForParkingViolation(automobile, meter);
-=======
+		
 		ticket.ticketInfo();
 		
-		
-		
-		
-		
-		
-		
->>>>>>> 3829f542ba90a30451c7101da1d54e3dd0bdfa7b
-		
+
 		
 		
 	}
