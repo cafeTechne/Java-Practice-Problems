@@ -39,6 +39,7 @@ public class Application {
 		 */
 		
 		
+		
 		//instantiate each class: 
 		FuelGauge gauge = new FuelGauge(); //do this to access the static method
 		Odometer odometer = new Odometer();
