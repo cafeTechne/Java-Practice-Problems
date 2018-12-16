@@ -1,0 +1,14 @@
+/***************************************************************
+ Application class: PayrollDemo
+***************************************************************/
+   
+import java.util.Scanner;
+ 
+public class PayrollDemo 
+{
+   public static void main(String[] arg)  
+   {
+      //declare and instantiate 3 Payroll objects
+   }  
+}  //End Class
+

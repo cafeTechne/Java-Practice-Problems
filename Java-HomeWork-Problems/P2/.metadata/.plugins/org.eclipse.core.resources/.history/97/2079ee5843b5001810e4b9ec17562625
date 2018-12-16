@@ -1,0 +1,26 @@
+import java.util.*;
+
+/**
+ * This program demonstrates the Circle class by asking the user for the circle's 
+ * radius, creating a Circle object, and then reporting the circle's area, diameter, and circumference.
+ * @author cafeTechne
+ *
+ */
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		//initialize the Scanner object to take input
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("User, please enter the radius of a circle");
+		double radius = keyboard.nextDouble();
+		
+		Circle circle = new Circle(radius);
+		
+		//calls a method to display the area, diameter, and circumference of this circle.
+		circle.displayInfo();
+	}
+
+}

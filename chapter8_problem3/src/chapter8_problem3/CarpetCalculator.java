@@ -1,7 +1,12 @@
+//*****************************************
+//   Name: Gino N. LaGuardia-LoBianco
+//   CTP 150 – Section#003
+//   Lab Assignment #7 , Problem 2
+//***************************************** 
+
+
 package chapter8_problem3;
 import java.util.Scanner;
-
-
 
 public class CarpetCalculator {
 
@@ -14,27 +19,71 @@ public class CarpetCalculator {
 		 */
 		double length = 0;
 		double width = 0;
-		double costPerSquareFoot = 0;
+		double costPerSquareFoot = 8;
 		Scanner keyboard = new Scanner(System.in);
 		
+		System.out.println("This program will display the cost of carpeting a room.");
+		System.out.println("You must input the room's dimensions in feet.");
+		System.out.println("\n");
 		
-		System.out.println("User what is the length of your room?");
+		System.out.println("\nRoom 1: ");
+		System.out.println("Enter the length first: ");
 		length = keyboard.nextDouble();
 		
-		System.out.println("User what is the width of your room?");
+		System.out.println("Now enter the width: ");
 		width = keyboard.nextDouble();
-		
-		System.out.println("User how much does your selected carpeting cost?");
-		costPerSquareFoot = keyboard.nextDouble();
 		
 		
 		RoomDimension roomSize = new RoomDimension();
 		roomSize.setRoomDimension(length, width);
 		
+		
+		
+		System.out.println("\nRoom 2: ");
+		System.out.println("Enter the length first: ");
+		length = keyboard.nextDouble();
+		
+		System.out.println("Now enter the width: ");
+		width = keyboard.nextDouble();
+		
+		RoomDimension roomSize2 = new RoomDimension();
+		roomSize2.setRoomDimension(length, width);
+		
+		if(roomSize.equals(roomSize2)) {
+			System.out.println("They are equal");
+		}
+		else {
+			System.out.println("They are not equal");
+		}
+		
+		if(roomSize.greaterThan(roomSize2)) {
+			System.out.println("Room 1 is greater than Room 2.");
+		}
+		else {
+			System.out.println("Room 2 is greater than Room 1");
+		}
+		
+		if(roomSize.lessThan(roomSize2)) {
+			System.out.println("Room 1 is less than Room 2.");
+		}
+		else {
+			System.out.println("Room 2 is less than Room 1");
+		}
+		
+		
 		RoomCarpet room = new RoomCarpet(roomSize, costPerSquareFoot);
+		RoomCarpet room2 = new RoomCarpet(roomSize2, costPerSquareFoot);
 		
-		System.out.println("The total cost of your carpeting will be $" + room.getTotalCost(roomSize)+ " dollars!");
 		
+		System.out.println("\nRoom 1: ");
+		System.out.println("Room Dimensions: ");
+		System.out.println(roomSize);
+		System.out.println("\nThe total cost of your carpeting will be $" + room.getTotalCost(roomSize)+ " dollars!");
+		
+		System.out.println("\nRoom 2: ");
+		System.out.println("Room Dimensions: ");
+		System.out.println(roomSize2);
+		System.out.println("\nThe total cost of your carpeting will be $" + room2.getTotalCost(roomSize2)+ " dollars!");
 		
 		
 	}

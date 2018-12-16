@@ -1,0 +1,19 @@
+/***************************************************************
+ Application class: PayrollDemo
+***************************************************************/
+   
+import java.util.Scanner;
+ 
+public class PayrollDemo 
+{
+   public static void main(String[] arg)  
+   {
+      //declare and instantiate 3 Payroll objects
+	   
+	   Payroll emp1 = new Payroll();  
+	   Payroll emp2 = new Payroll("1002"); 
+	   Payroll emp3 = new Payroll("1003", 40);
+	   System.out.println("User, this is a test!");
+   }  
+}  //End Class
+

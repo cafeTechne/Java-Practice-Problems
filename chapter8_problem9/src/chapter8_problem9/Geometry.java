@@ -1,122 +1,54 @@
+//*****************************************
+  //   Name: Gino N. LaGuardia-LoBianco
+  //   CTP 150 – Section#003
+  //   Lab Assignment #7 , Problem 1
+  //***************************************** 
+
+
 package chapter8_problem9;
+
+/**
+* This class contains utility methods that allow for the calculation of the area of
+* Rectangles, Triangles, and Circles.
+*
+*/
+
 
 public class Geometry {
 	
+	/**
+	 * Calculates the area of a circle.
+	 * @param radius A double entered by the user representing the radius of a circle.
+	 * @return a double representing the area of a circle
+	 */
 	
-/*
- * 1) A static method that accepts the radius of a circle and returns the area of the circle.
-		 * 
-		 *    Use the following formulae: 
-		 *    
-		 *    Area = PI * r^2
-		 *    
-		 * 2) A static method that accepts the length and width of a rectangle and returns the area
-		 *    of the rectangle. Use the following formulae: 
-		 *    
-		 *    Area = Length * Width
-		 *    
-		 * 3) A static method that accepts the length of a triangle's base and the triangle's height.
-		 *    the method should return the area of the triangle. Use the following formula: 
-		 *        Area = Base * Height * 0.5
-		 *        
-		 *        
-		 *  The methods should display an error message if negative values are used for the circle's radius,
-		 *  the rectangle's length or width, or the triangle's base or height
- */
-	
-	
-	static private double radius = 0;
-	static private double length = 0;
-	static private double width = 0;
-	static private double base = 0;
-	static private double height = 0;
-	
-	public Geometry() {
-		
-		Geometry.setRadius(0);
-		Geometry.setLength(0);
-		Geometry.setWidth(0);
-		Geometry.setBase(0);
-		Geometry.setHeight(0);
-		
-	}
-	
-	
-	public static double calcArea(double radius) {
+	public static double calcCircleArea(double radius) {
 		//circle	
 		return (Math.PI * radius * radius);
 	}
+	
+	/**
+	 * Calculates the area of a rectangle.
+	 * @param length a double representing the length of a rectangle.
+	 * @param width a double representing the width of a rectangle.
+	 * @return
+	 */
 
-	public static double calcArea(double length, double width) {
+	public static double calcRectangleArea(double length, double width) {
 		//rectangle		
 		return (length * width);
 	}
+	
+	/**
+	 * Calculates the area of a triangle.
+	 * @param base a double representing the base of a triangle.
+	 * @param height a double representing the height of a triangle.
+	 * @return a double representing the area of a triangle.
+	 */
 
-	public static double calcArea(float base, float height) {
+	public static double calcTriangleArea(double base, double height) {
 		//triangle
 		return ((0.5)*base*height);
 	}
 
-	public static double getRadius() {
-		return Geometry.radius;
-	}
-
-	public static void setRadius(double radius) {
-		if(radius < 0) {
-			System.out.println("The value entered must be positive!");
-			
-		}
-		else if(radius >= 0) Geometry.radius = radius;
-	}
-
-	public static double getLength() {
-		return length;
-	}
-
-	public static void setLength(double length) {
-		
-		if(length < 0) {
-			System.out.println("The value entered must be positive!");
-			
-		}
-		else if(length >= 0) Geometry.length = length;
-	}
-
-	public static double getWidth() {
-		return width;
-	}
-
-	public static void setWidth(double width) {
-		
-		if(width < 0) {
-			System.out.println("The value entered must be positive!");
-			
-		}
-		else if(width >= 0) Geometry.width = width;
-	}
-
-	public static double getBase() {
-		return base;
-	}
-
-	public static void setBase(float base) {
-		if(base < 0) {
-			System.out.println("The value entered must be positive!");
-			
-		}
-		else if(base >= 0) Geometry.base = base;
-	}
-
-	public static double getHeight() {
-		return height;
-	}
-
-	public static void setHeight(float height) {
-		if(height < 0) {
-			System.out.println("The value entered must be positive!");
-			
-		}
-		else if(height >= 0) Geometry.height = height;
-	}
-	
 }
